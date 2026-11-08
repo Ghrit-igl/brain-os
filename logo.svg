@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="240">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#110524"/>
+      <stop offset="100%" stop-color="#05020c"/>
+    </linearGradient>
+    <linearGradient id="purple-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#bg2)" stroke="#2e1065" stroke-width="2"/>
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="160" height="160" rx="20" fill="#1e1035" stroke="url(#purple-glow)" stroke-width="3" filter="url(#glow2)"/>
+    <circle cx="80" cy="80" r="45" fill="none" stroke="#c084fc" stroke-width="4" stroke-dasharray="6 4"/>
+    <circle cx="80" cy="80" r="22" fill="#a855f7" filter="url(#glow2)"/>
+    <path d="M50 80 L110 80 M80 50 L80 110" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="240" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="1.5">
+    BRAIN<tspan fill="#c084fc">-OS</tspan>
+  </text>
+  <text x="240" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">
+    Autonomous Multi-Agent Software Engineering Engine &amp; Architecture Compiler
+  </text>
+  <text x="240" y="170" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#e879f9">
+    [Anti-Hallucination Shield] · [Architecture Freeze] · [Intent-to-Silicon]
+  </text>
+</svg>
